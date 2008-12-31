@@ -1,0 +1,27 @@
+<div id="picture-list">
+<h1>Movie Listing</h1>
+
+<table cellpadding="5" cellspacing="0">
+<% for picture in @pictures %>
+  <tr valign="top" class="<%= cycle('list-line-odd', 'list-line-even') %>">
+
+    <td>
+      <img class="list-one-sheet" src="<%= picture.one_sheet_url %>"/>
+    </td>
+
+    <td width="60%">
+      <span class="list-title"><%= h(picture.title) %></span><br />
+      <%= h(truncate(picture.description, 80)) %>
+    </td>
+
+    <td class="list-actions">
+      <%= link_to 'Show', picture %>
+      <%= link_to 'Edit', edit_picture_path(picture) %>
+      <%= link_to 'Destroy', picture, :confirm => 'Are you sure?', :method => :delete %>
+     </td>
+  </tr>
+<% end %>
+</table>
+</div>
+<br />
+<%= link_to 'New picture', :action => 'new' %>

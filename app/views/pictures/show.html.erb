@@ -1,0 +1,18 @@
+<p>
+  <b>Title:</b>
+  <%=h @picture.title %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%=h @picture.description %>
+</p>
+
+<p>
+  <b>One sheet url:</b>
+  <%=h @picture.one_sheet_url %>
+</p>
+
+
+<%= link_to 'Edit', edit_picture_path(@picture) %> |
+<%= link_to 'Back', pictures_path %>

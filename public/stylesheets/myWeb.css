@@ -1,0 +1,79 @@
+/* Global styles */
+/* START:notice */
+#notice {
+border: 2px solid red;
+padding: 1em;
+margin-bottom: 2em;
+background-color: #f0f0f0;
+font: bold smaller sans-serif;
+}
+/* END:notice */
+/* Styles for main page */
+#topBar {
+background: #0099cc;
+padding-top: 2px;
+padding-bottom: 20px;
+border-bottom: 4px solid;
+font: small-caps 50px/50px serif;
+color: #000080;
+text-align: center;
+/* font: small-caps 50px/50px "Times New Roman", serif; */
+}
+#topBar img {
+/*float: left;*/
+width: 60px;
+height: 70px;
+}
+#columns {
+background: #9999ff;
+}
+
+#bottomBar {
+    clear: both;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #0099cc;
+    text-align: center;
+    border-top: 4px solid;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    margin: -50px auto 0 auto;
+}
+
+#bottomBar a {
+    color: #ffffff;
+    font-size: 100%;
+}
+
+#main {
+background: black;
+}
+
+#mainPanel {
+height: 100%;
+margin-left: 12em;
+padding-top: 1em;
+padding-left: 2em;
+background: white;
+}
+
+#leftBar {
+float: left;
+padding-top: 1em;
+padding-left: 1em;
+padding-bottom: 1em;
+width: 10em;
+min-height: 550px;
+background: #9999ff;
+}
+#leftBar a {
+color: #00ffff;
+font-size: small;
+}
+
+h1 {
+font: 150% sans-serif;
+color: #226;
+}
+
